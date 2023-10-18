@@ -1,11 +1,13 @@
 package ru.ivan.data.model;
 
+import java.io.File;
+
 public class PhotoModel {
   public String fileName;
-  public String filePath;
+  public File photoFile;
 
-  public PhotoModel(String fileName, String filePath) {
+  public PhotoModel(String fileName, File photoFile) {
     this.fileName = fileName;
-    this.filePath = filePath;
+    this.photoFile = photoFile;
   }
 }

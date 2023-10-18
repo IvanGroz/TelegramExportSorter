@@ -11,7 +11,7 @@ public class Main {
 
   public static void main(String[] args) {
     final String rootFolderPath = "C:\\Users\\Acer\\Downloads\\Telegram " +
-            "Desktop\\ChatExport_2023-10-18\\photos";
-    System.out.println(SORT_PHOTOS_BY_FOLDER_USE_CASE.invoke(rootFolderPath));
+            "Desktop\\ChatExport_2023-06-01\\photos";
+    SORT_PHOTOS_BY_FOLDER_USE_CASE.invoke(rootFolderPath);
   }
 }

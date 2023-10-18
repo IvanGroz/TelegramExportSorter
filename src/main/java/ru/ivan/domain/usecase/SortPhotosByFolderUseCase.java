@@ -14,6 +14,9 @@ public class SortPhotosByFolderUseCase {
 
 
   public TreeSet<PhotoEntity> invoke(String rootFolderPath) {
-    return photoRepository.getPhotos(rootFolderPath);
+
+    TreeSet<PhotoEntity> photos = photoRepository.getPhotos(rootFolderPath);
+    photoRepository.sortPhotos(photos);
+    return photos;
   }
 }
